@@ -6,7 +6,7 @@ Array.from(buttons).forEach((e) => {
   e.addEventListener("click", () => {
     if (e.innerText === "=") {
       try {
-        currentEquation = eval(currentEquation).toString();
+        currentEquation = eval(currentEquation).toFixed(3).toString();
         display.value = currentEquation;
       } catch (error) {
         display.value = "Error";
