@@ -4,7 +4,7 @@ let currentEquation = "";
 
 Array.from(buttons).forEach((e) => {
   e.addEventListener("click", () => {
-    const value = e.innerText;
+    const value = e.innerText; 
 
     if (value === "=") {
       try {
